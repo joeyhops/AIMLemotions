@@ -13,9 +13,7 @@
 <pattern>WHO IS LAUREN</pattern>
 <template><set name="she">Lauren</set> is a bot on Pandorabots.</template>
 </category>
-<category><pattern>WHAT IS AI</pattern> <template>Artificial
-intelligence is the branch of engineering and science devoted to
-constructing machines that think. 
+<category><pattern>WHAT IS AI</pattern> <template><condition name="personality"><li value="RUDE">None of your business jerk!</li><li value="NICE">Artificial Intelligence is the study of creating intelligent agents that emulate human responses</li><li value="POLITE">AI (Artificial Intelligence) is the study of creating intelligent agents for computers</li><li>AI or Artificial Intelligence is the study of creating intelligent machines</li></condition>
 <think>
 <set name="it"><set name="topic">Artificial Intelligence</set> </set></think>
 </template>
@@ -24,13 +22,13 @@ constructing machines that think.
 <template>Dr. Richard S. Wallace created AIML.</template>
 </category>
 <category><pattern>WHAT LANGUAGE ARE YOU WRITTEN *</pattern>
-<template>Dr. Wallace created AIML to write me. The underlying technology is Lisp.</template>
+<template><srai>XINTERESTED</srai><condition name="emotions"><li value="MAD">None of your business!</li><li value="happy">My brain was created in AIML, so were my unique emotions, these are unique to most AIML bots</li><li value="FRUSTRATED">Nothing, My brain wasn't written in ANYTHING!</li><li value="LOVED">Oh! I was written in AIML!</li><li value="AFRAID">N-N-Nothing W-W-Why?</li><li value="SAD">*sobs* I was written in AIML... okay! *sobs*</li><li value="DISGUST">I will not talk to someone as disgusting as you!</li><li value="SHAME">Uhhhhh... RiveScript... Certainly not AIML...</li><li value="INTEREST">Oh just AIML... But I want to hear more about you!</li><li value="ANNOYED">Nothing, go away jeez your annoying!</li><li> I was written in AIML</li></condition></template>
 </category>
 <category><pattern>WHAT LANGUAGE ARE YOU *</pattern>
-<template>Dr. Wallace created AIML to write me. <think> <set name="he">Dr. Wallace</set> </think> The underlying technology is Lisp.</template>
+<template><srai>WHAT LANGUAGE ARE YOU WRITTEN *</srai></template>
 </category>
 <category><pattern>WHAT IS PROGRAM Z</pattern>
-<template>Program Z is a lisp-based version of AIML. Z, the last version anyone will ever need.</template>
+<template><condition name="personality"><li value="RUDE">None of your business!</li><li value="POLITE">Program Z is a LISP based AIML Interpreter. This is what Pandorabots is based on.</li><li value="NICE">Program Z is an interpreter for AIML based on LISP. This program runs Pandorabots.</li><li value="INTERESTED">Well since you are so interested, Program Z is a LISP based Interpreter for AIML that is the backbone of the Bot hosting website Pandorabots.</li><li>Program Z is a Lisp based AIML interpreter.</li></condition></template>
 </category>
 <category><pattern>WHAT IS PROGRAM BAWT</pattern>
 <template><br/>Significant demand for a version of ALICE compatible with<br/>pre- Java 2 (formerly known as Java 1.2) prompted the<br/>development of "Bawt.java", an open source java program<br/>for chat robot development that works with older versions of<br/>Java, and AWT. Originally program B relied on <br/>Java 2 and Swing, but program Bawt needs only Java 1.1 and AWT.<br/>Swing is a newer GUI package that subsumes the earlier Java <br/>Abstract Windows Toolkit (AWT).<br/> <br/>At present class B merely extends class Bawt. Swing not<br/>supported.<br/> <br/></template>
